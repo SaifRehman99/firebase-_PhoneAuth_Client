@@ -19,6 +19,8 @@
 
 
     Welcome to registration page
+    <div id="num"></div>
+
 
 
 
@@ -55,11 +57,20 @@
 
                 window.location.href = 'phone_verify.html';
 
+
+            } else {
+                let phoneNumber = user.phoneNumber
+                console.log(phoneNumber)
+
+                document.querySelector("#num").innerHTML = `<h1>${phoneNumber}</h1>`;
             }
         });
     </script>
 
+    <script src="phone_verify.js" type="text/javascript"></script>
+
     <script src="main.js"></script>
+
 
 </body>
 
